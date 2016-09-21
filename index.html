@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Генератор Цитат</title>
+  <link rel="stylesheet" href="src/style.css"/>
+  <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" async=false>
+</head>
+<body>
+  
+  <div id="user-layout">
+    <div id="wrapper">
+      <canvas id="background" crossOrigin="anonymous" title="Сites of greatest" alt="sdsds"></canvas>
+    </div>
+    <div style="display:none">
+      <img src="resources/back.png" id="backPic"/>
+    </div>
+    <form class="container">
+      <fieldset class="row">
+        <br>
+        <div class="span6">
+        <label>Цитата</label>
+        <textarea id="textInput" rows=4>Придумывать цитаты  это то еще занятие.
+Я ведь не Джейсон Стетхем. И не умею 
+складно говорить как Бисмарк</textarea>
+
+        <p>
+        <label>Загрузи фото</label>
+        <input type="file" id="photoInput"/>
+        </p>
+       </div>
+
+        <div class="span6">
+        <label>Имя</label>
+        <input type=text id="nameInput" value="Житейский"/>
+
+        <label>Имя (вторая строка)</label>
+        <input type=text id="nameSecondInput" value="Арсен Олегович"/>
+
+        <br>
+        <br>
+         <input type="button" id="render" class="btn" value="Сгенерировать" />
+
+        </div>
+        
+       
+
+        
+      </fieldset>
+    </form>
+
+    
+
+  </div>
+
+  <script type="text/javascript" src="src/loaderCollision.js"></script>
+</body>
+</html>
